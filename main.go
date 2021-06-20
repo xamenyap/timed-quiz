@@ -38,7 +38,7 @@ func main() {
 	finish := make(chan struct{})
 
 	fmt.Printf("The quiz duration is %v\n", duration)
-	fmt.Println("Press any key to start the quiz")
+	fmt.Println("Press Enter to start the quiz")
 
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
