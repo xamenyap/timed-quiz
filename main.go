@@ -17,7 +17,7 @@ func main() {
 	)
 
 	flag.StringVar(&fileName, "f", "problems.csv", "path to the file containing the quiz details")
-	flag.DurationVar(&duration, "d", 10*time.Second, "duration allowed for the quiz")
+	flag.DurationVar(&duration, "d", 60*time.Second, "duration allowed for the quiz")
 	flag.Parse()
 
 	f, err := os.Open(fileName)
