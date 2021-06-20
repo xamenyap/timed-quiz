@@ -3,13 +3,19 @@ package main
 import (
 	"bufio"
 	"encoding/csv"
+	"flag"
 	"fmt"
 	"log"
 	"os"
 )
 
 func main() {
-	f, err := os.Open("problems.csv")
+	var fileName string
+
+	flag.StringVar(&fileName, "f", "problems.csv", "path to the file containing the quiz details")
+	flag.Parse()
+
+	f, err := os.Open(fileName)
 	if err != nil {
 		log.Fatal("unable to open file", err)
 	}
