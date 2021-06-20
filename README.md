@@ -1,5 +1,8 @@
 # Timed Quiz
-Timed Quiz is a game of quiz written in Go running in a console terminal. The quiz contains text-based questions and answers by reading from `problems.csv` taken in 60 seconds. Both file path and quiz duration can be customized by passing certain flags when running the program. Check the section right below this for all available flags.   
+Timed Quiz is a game of quiz written in Go running in a console terminal. The quiz contains text-based questions and answers by reading from `problems.csv` taken in 60 seconds. Both file path and quiz duration can be customized by passing certain flags when running the program. Check [here](#available-options) for all available flags
+
+## Prerequisites
+- Go v1.16
 
 ## Available Options
 - `-h` displays help of all other options
